@@ -128,3 +128,33 @@
 
 // triple(5);
 
+
+
+
+// Question
+
+function createIncrement() {
+    var count = 0;
+
+    function increment() {
+        count++;
+        console.log(count);
+    }
+
+let message = `Count is ${count}`;
+
+function log() {
+    console.log(message);
+}
+
+return [increment, log];
+}
+
+const [increment, log] = createIncrement();
+
+increment();
+log();
+increment();
+log();
+increment();
+log();

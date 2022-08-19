@@ -1,0 +1,46 @@
+.accordian{
+    max-width: 800px;
+}
+
+.accordian .contentbox{
+    position: relative;
+    margin: 10px 20px;
+    /* background-color: rgb(232, 166, 232); */
+}
+
+.accordian .contentbox .label{
+    position: relative;
+    padding: 10px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.accordian .contentbox .label::before{
+    content: "+";
+    font-weight: bolder;
+    position: absolute; 
+    right: 20px;
+    /* font-size: 1.5rem; */
+
+
+}
+
+.accordian .contentbox .content{
+    position: relative;
+    background-color: rgb(232, 166, 232);
+    height: 0; 
+    overflow: hidden;
+}
+
+.accordian .contentbox.active .content{
+    height: auto;
+    padding: 10px;
+}
+
+.accordian .contentbox.active .label::before{
+    content: "-";
+    font-weight: bolder;
+    position: absolute; 
+    /* right: 20px; */
+}

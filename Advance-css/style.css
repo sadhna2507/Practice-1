@@ -9,13 +9,22 @@
     align-items: center;
     height: 100vh;
  }
- 
+ @keyframes sadhna{
+    10%{
+        transform: rotate(40deg);
+    }
+
+    20%{
+        transform: scale(1.5);
+    }
+ }
 
 
 .card{
     border: 2px solid black;
     width: 300px;
-
+    transition: transform 5s;
+    transition: sadhna;
  }
  p{
     margin: 5px;
@@ -31,7 +40,7 @@
     border: 5px solid white;
  }
 
- .card:hover{
+ /* .card:hover{
     transform: rotate(40deg);
     transform: scale(1.5);
- }
+ } */

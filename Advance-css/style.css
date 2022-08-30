@@ -8,21 +8,30 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-
  }
+ 
 
- .card{
+
+.card{
     border: 2px solid black;
     width: 300px;
 
  }
+ p{
+    margin: 5px;
+ }
  
  .bottom_part{
-    background-color: greenyellow;
+    background-color: rgb(89, 255, 47);
  }
 
  .img{
     margin: 10px;
     margin-bottom: 5px;
     border: 5px solid white;
+ }
+
+ .card:hover{
+    transform: rotate(40deg);
+    transform: scale(1.5);
  }

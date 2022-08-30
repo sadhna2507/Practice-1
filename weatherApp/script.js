@@ -21,7 +21,7 @@ btn1.addEventListener("click", function(name){
         let result = `<div><h1>city : ${data.name}</h1>
         <h1>temperature : ${Math.floor(data["main"].temp-273)} °C</h1>
         <h1>longitude : ${data["coord"].lon}</h1>
-        <h1>longitude : ${data["coord"].lat}</h1></div>`
+        <h1>latitude : ${data["coord"].lat}</h1></div>`
         let container = document.querySelector(".container")
         container.innerHTML += result
         console.log(data);

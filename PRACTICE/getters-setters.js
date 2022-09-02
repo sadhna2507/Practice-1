@@ -25,8 +25,11 @@ const person = {
     
     set fullName (newName){
         let parts = newName.split(" ");
-        this.firstName = parts[0];
+        this.firstName = parts[0];  
         this.lastName = parts[1];
+
+        // person.firstName = parts[0];  //in place of this we can use person
+        // person.lastName = parts[1];
     },
 }
 person.fullName = "sachnin tendulkar"

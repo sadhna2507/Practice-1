@@ -34,3 +34,15 @@ const person = {
 }
 person.fullName = "sachnin tendulkar"
 console.log(person.fullName)
+
+
+
+
+
+//this below console will throw error because that console will search outside but the code is in block
+
+{
+    const message = "Good Morning"
+}
+
+console.log(message)
